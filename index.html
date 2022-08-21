@@ -23,41 +23,43 @@
                 <h1 class="text-center font-semibold mt-2 ">Income</h1>
                 <div class="mt-4 text-center ">
                     <label class="px-2 font-semibold" for="">Income: </label>
-                    <input type="text">
+                    <input id="income-field" type="text">
                 </div>
                 <h1 class="text-center font-semibold mt-2 ">Expense</h1>
                 <div class="mt-2 text-center ">
                     <label class="px-2 font-semibold" for="">Food: </label>
-                    <input type="text">
+                    <input id="food-field" type="text">
                 </div>
                 <div class="mt-2 text-center ">
                     <label class="px-2 font-semibold" for="">Rent: </label>
-                    <input type="text">
+                    <input id="rent-field" type="text">
                 </div>
                 <div class="mt-2 text-center ">
                     <label class="px-2 font-semibold" for="">Clothes: </label>
-                    <input type="text">
+                    <input id="cloth-field" type="text">
                 </div>
 
                 <div class="text-center mt-4">
-                    <button class="bg-blue-500 rounded px-8 py-1 font-bold">Calculate</button>
-                    <h3 class="font-semibold mt-2">Total Expense : <span>000</span></h3>
-                    <h3 class="font-semibold">Balance : <span>000</span></h3>
+                    <button id="btn-calculate" class="bg-blue-500 rounded px-8 py-1 font-bold">Calculate</button>
+                    <h3  class="font-semibold mt-2">Total Expense : <span id="total-expense">000</span></h3>
+                    <h3 class="font-semibold">Balance : <span id="total-balance">000</span></h3>
 
                 </div>
                 <div class="mt-5 text-center ">
                     <label class="font-semibold" for="">Save:</label>
-                    <input class="w-20" type="text">
+                    <input id="saving-field" class="w-20" type="text">
                     <span class="font-bold">%</span>
-                    <button class="bg-blue-500 rounded px-8 py-1 font-bold">Save</button>
+                    <button id="btn-save" class="bg-blue-500 rounded px-8 py-1 font-bold">Save</button>
 
                 </div>
                 <div class="font-semibold text-center mt-5 mb-5">
-                    <h3>Saving Amount : <span>0000</span></h3>
-                    <h3>Remaining Balance : <span>0000</span></h3>
+                    <h3>Saving Amount : <span id="saving-amount">0000</span></h3>
+                    <h3>Remaining Balance : <span id="remaining-balance">0000</span></h3>
                 </div>
             </div>
         </div>
     </main>
+    <script src="js/common.js"></script>
+    <script src="js/money.js"></script>
 </body>
 </html>
